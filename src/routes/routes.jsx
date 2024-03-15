@@ -17,6 +17,36 @@ const router = createBrowserRouter([
         element: <Resume />
     },
     {
+        path: '/',
+        element: <FormLayout />,
+        children: [
+            {
+                path: 'personal-details',
+                element: <PersonalDetailsForm />
+            },
+            {
+                path: 'experience',
+                element: <ExperienceForm />
+            },
+            {
+                path: 'education',
+                element: <EducationForm />
+            },
+            {
+                path: 'projects',
+                element: <ProjectForm />
+            },
+            {
+                path: 'skills',
+                element: <SkillForm />
+            },
+            {
+                path: 'additional-details',
+                element: <AdditionalDetailsForm />
+            },
+        ]
+    },
+    {
         path: 'form-layout',
         element: <FormLayout />,
         children: [
